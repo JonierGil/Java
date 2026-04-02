@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <p:card style="width: 35rem; margin-bottom: 2em">
+            <f:facet name="title">GestionarAsignaturas</f:facet>
+            <h:panelGrid columns="3">
+                <p:outputLabel for="txfCodigo" value="Codigo : "/>
+                <p:inputText id="txfCodigo"></p:inputText>
+                <p:message for="txfCodigo"></p:message>
+                
+                <p:outputLabel for="txfNombre" value="nombre : "/>
+                <p:inputText id="txfNombre"></p:inputText>
+                <p:message for="txfNombre"></p:message>
+                
+                <p:outputLabel for="txfCreditos" value="Creditos : "/>
+                <p:inputText id="txfCreditos"></p:inputText>
+                <p:message for="txfCreditos"></p:message>
+                
+                <p:outputLabel for="txfIntensidad" value="Intensidad : "/>
+                <p:inputText id="txfIntensidad"></p:inputText>
+                <p:message for="txfIntensidad"></p:message>
+            </h:panelGrid>
+            <f:facet name="footer">
+                <p:commandButton icon="pi pi-check" value="save"/>
+                <p:commandButton icon="pi pi-check" value="cancel"
+                                 styleClass="ui-button-secundary"
+                                 style="margin-left: .5em"/>
+            </f:facet>
+        </p:card>
+    </body>
+</html>
